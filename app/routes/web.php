@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/{any}', function () {
+    return view('Index');
+})->where('any', '.*');
 
 // Auth Twitter
 Route::get('/login/auth/twitter', 'Auth\AuthController@TwitterRedirect');
