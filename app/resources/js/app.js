@@ -13,3 +13,4 @@ require('./bootstrap');
  */
 
 require('./pages/Index');
+require('./pages/User');
